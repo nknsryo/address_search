@@ -1,5 +1,7 @@
 import requests
-def address():
+
+
+def main():
     # zipcode = input("郵便番号を入力してください(ハイフン無し7桁) >> :")
     zipcode = "4443174"
     url = f"https://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}"
@@ -13,4 +15,7 @@ def address():
     return f"{pref_name}{city_name}{town_name}"
 
 
-print(address())
+# print(main())
+
+if __name__ == "__main__":
+    main()
